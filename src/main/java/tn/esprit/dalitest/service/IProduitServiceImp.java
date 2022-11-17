@@ -11,6 +11,7 @@ import tn.esprit.dalitest.repository.RayonRepository;
 import tn.esprit.dalitest.repository.StockRepository;
 
 import javax.transaction.Transactional;
+import java.util.Date;
 import java.util.List;
 
 @Service
@@ -64,5 +65,11 @@ public class IProduitServiceImp implements IProduitService{
             produit.getFournisseurs().add(fournisseur);
             produitRepository.save(produit);
         }
+    }
+
+    @Override
+    public float getRevenuBrutProduit(Long idProduit, Date startDate, Date endDate) {
+        Produit produit = 
+        return 0;
     }
 }
